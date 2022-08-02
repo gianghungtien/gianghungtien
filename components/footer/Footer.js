@@ -18,15 +18,14 @@ const Footer = (props) => {
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
                                     <Link className="site-logo" to="/"><img
-                                        src="images/logo.png" alt=""/>Elito.</Link>
+                                        src="images/logo.png" alt=""/>TienGH.</Link>
                                 </div>
-                                <p>Welcome and open yourself to your truest love this year with us! With the Release
-                                    Process</p>
+                                <p>I have been working in this field for over 5 years and am ready to assist in navigating your business in the right direction.</p>
                                 <div className="social-icons">
                                     <ul>
-                                        <li><Link to="https://fb.com/gianghungtien.jxj"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link to="https://twitter.com/gianghungtien"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="https://linkedin.com/in/tiengh"><i className="ti-linkedin"></i></Link></li>
+                                        <li><a href="https://fb.com/gianghungtien.jxj"><i className="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/gianghungtien"><i className="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://linkedin.com/in/tiengh"><i className="ti-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

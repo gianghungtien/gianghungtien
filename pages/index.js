@@ -27,7 +27,6 @@ export default function Home() {
                 <ExprienceSec/>
                 <ProjectSection/>
                 <Testimonial/>
-                <Pricing/>
                 <ContactArea/>
                 <BlogSection/>
                 <Footer/>
