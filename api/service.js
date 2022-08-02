@@ -4,7 +4,7 @@ const Services = [
         Id: '1',
         sImgS:'images/service-single/graphics/img-1.jpg',
         sTitle: 'Graphic Design',
-        description:'Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account the system.',
+        description:'Graphic design is the profession and academic discipline whose activity consists in projecting visual communications.',
         des2:'Lacus, etiam sed est eu tempus need Temer diam congue laoret .',
         des3:'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         icon:'flaticon-vector',

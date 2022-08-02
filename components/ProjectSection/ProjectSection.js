@@ -95,7 +95,7 @@ const ProjectSection = (props) => {
                                 </div>
                                 <div className="wpo-project-text">
                                     <h2>{project.title}</h2>
-                                    <span>{project.subTitle}</span>
+                                    <span>{project.subTitle} {project.link}</span>
                                 </div>
                             </div>
                         ))}

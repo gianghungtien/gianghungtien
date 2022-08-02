@@ -72,11 +72,6 @@ const ServiceSection = (props) => {
                                             </div>
                                             <h2>{service.sTitle}</h2>
                                             <p>{service.description}</p>
-                                            <Button
-                                                className="btn"
-                                                onClick={() => handleClickOpen(service)}>
-                                                Learn More
-                                            </Button>
                                         </div>
                                     </div>
                                 ))}
@@ -92,11 +87,6 @@ const ServiceSection = (props) => {
                                             </div>
                                             <h2>{service.sTitle}</h2>
                                             <p>{service.description}</p>
-                                            <Button
-                                                className="btn"
-                                                onClick={() => handleClickOpen(service)}>
-                                                Learn More
-                                            </Button>
                                         </div>
                                     </div>
                                 ))}
@@ -112,11 +102,6 @@ const ServiceSection = (props) => {
                                             </div>
                                             <h2>{service.sTitle}</h2>
                                             <p>{service.description}</p>
-                                            <Button
-                                                className="btn"
-                                                onClick={() => handleClickOpen(service)}>
-                                                Learn More
-                                            </Button>
                                         </div>
                                     </div>
                                 ))}
