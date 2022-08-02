@@ -16,7 +16,7 @@ const Hero = () => {
                                             I am</h2>
                                     </div>
                                     <div data-swiper-parallax="300" className="slide-sub-title">
-                                        <h5>Business Fullstack Development</h5>
+                                        <h5>Business Fullstack Counselors</h5>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
                                         <p>I have been working in this field for over 6 years and am ready to assist in navigating your business in the right direction.</p>
