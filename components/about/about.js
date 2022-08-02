@@ -9,57 +9,55 @@ const About = (props) => {
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <div className="wpo-about-exprience-wrap">
                             <div className="wpo-about-exprience">
-                                <h2>08</h2>
+                                <h2>06</h2>
                                 <span>Years of Experience</span>
                             </div>
                             <div className="client">
-                                <h3><span data-count="100">100</span>%</h3>
-                                <p>Clients Satisfections</p>
+                                <h3><span data-count="98">98.2</span>%</h3>
+                                <p>Clients Satisfactions</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 offset-lg-1 col-md-12 col-sm-12">
                         <div className="wpo-about-content">
                             <div className="wpo-about-title">
-                                <h2>My Advantage</h2>
-                                <p>Must explain to you how all this mistaken idea of denouncing
-                                    pleasure and praising pain was born and I will give you a complete account
-                                    the system and expound the actual and praising pain was born.</p>
+                                <h2>My Advantage (Realtime)</h2>
+                                <p>Below are the number of projects that I have been involved in over the past 6 years (it will be updated realtime).</p>
                             </div>
                             <div className="wpo-about-funfact">
                                 <div className="grid">
                                     <div className="grid-inner">
-                                        <h3><span data-count="98">98</span>%</h3>
-                                        <p>Figma</p>
+                                        <h3><span data-count="278">278</span></h3>
+                                        <p>HTML & PHP</p>
                                     </div>
                                 </div>
                                 <div className="grid">
                                     <div className="grid-inner">
-                                        <h3><span data-count="92">92</span>%</h3>
-                                        <p>Sketch</p>
+                                        <h3><span data-count="74">74</span></h3>
+                                        <p>Shopify</p>
                                     </div>
                                 </div>
                                 <div className="grid">
                                     <div className="grid-inner">
-                                        <h3><span data-count="88">88</span>%</h3>
-                                        <p>Photoshop</p>
-                                    </div>
-                                </div>
-                                <div className="grid">
-                                    <div className="grid-inner">
-                                        <h3><span data-count="72">72</span>%</h3>
-                                        <p>Illustrator</p>
-                                    </div>
-                                </div>
-                                <div className="grid">
-                                    <div className="grid-inner">
-                                        <h3><span data-count="43">43</span>%</h3>
+                                        <h3><span data-count="52">52</span></h3>
                                         <p>WordPress</p>
                                     </div>
                                 </div>
                                 <div className="grid">
                                     <div className="grid-inner">
-                                        <h3><span data-count="37">37</span>%</h3>
+                                        <h3><span data-count="319">319</span></h3>
+                                        <p>Digital Marketing</p>
+                                    </div>
+                                </div>
+                                <div className="grid">
+                                    <div className="grid-inner">
+                                        <h3><span data-count="43">43</span></h3>
+                                        <p>Market Research</p>
+                                    </div>
+                                </div>
+                                <div className="grid">
+                                    <div className="grid-inner">
+                                        <h3><span data-count="37">37</span></h3>
                                         <p>ReactJS</p>
                                     </div>
                                 </div>

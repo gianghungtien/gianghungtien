@@ -40,10 +40,10 @@ const Header = (props) => {
                                             <Link activeClass="active" to="portfolio" spy={true} smooth={true}  duration={500} onClick={ClickHandler}>Portfolio</Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" to="contact" spy={true} smooth={true}  duration={500}>Contact</Link>
+                                            <Link activeClass="active" to="blog" spy={true} smooth={true}  duration={500}>Blog</Link>
                                         </li>
                                         <li>
-                                            <Link activeClass="active" to="blog" spy={true} smooth={true}  duration={500}>Blog</Link>
+                                            <Link activeClass="active" to="contact" spy={true} smooth={true}  duration={500}>Contact</Link>
                                         </li>
                                     </ul>
 
@@ -52,7 +52,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="header-btn">
-                                        <a onClick={ClickHandler} className="theme-btn" download="My Cv" href="images/cv.jpg"
+                                        <a onClick={ClickHandler} className="theme-btn" download="My Resume" href="/resume.pdf"
                                             title="ImageName">
                                             <img className="hide-img" alt="ImageName" src="images/cv.jpg" />
                                             Resume

@@ -13,14 +13,13 @@ const Hero = () => {
                                 <div className="wpo-static-hero-inner">
                                     <div data-swiper-parallax="300" className="slide-title">
                                         <h2><span>Hello,</span>
-                                            I am Ronald.</h2>
+                                            I am</h2>
                                     </div>
                                     <div data-swiper-parallax="300" className="slide-sub-title">
-                                        <h5>UI/UX Designer</h5>
+                                        <h5>Business Fullstack Development</h5>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
-                                        <p>Must explain to how all this mistaken idea denouncing pleasure pain
-                                            the system and expound the actua.</p>
+                                        <p>I have been working in this field for over 6 years and am ready to assist in navigating your business in the right direction.</p>
                                     </div>
                                     <div className="clearfix"></div>
                                     <div className="slide-btn"><Link className="theme-btn" to="contact" spy={true} smooth={true}  duration={500}>Hire Me</Link></div>
