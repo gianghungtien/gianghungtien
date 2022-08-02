@@ -9,7 +9,7 @@ const About = (props) => {
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <div className="wpo-about-exprience-wrap">
                             <div className="wpo-about-exprience">
-                                <h2>06</h2>
+                                <h2>05</h2>
                                 <span>Years of Experience</span>
                             </div>
                             <div className="client">

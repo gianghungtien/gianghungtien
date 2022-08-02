@@ -7,8 +7,9 @@ const Expriences = [
         date: '2015 - 2016',
         logo: 'images/work/1.png',
         position: 'Junior Visual Designer',
-        companyName: 'Trapeza Group, USA.',
+        companyName: 'Yeah1 Group',
         workFrom: '',
+        link: 'https://yeah1group.com',
     },
     {
         date: '2017 - 2018',
@@ -46,12 +47,7 @@ const ExprienceSec = (props) => {
                             <ul>
                                 <li className="date">{exprience.date}</li>
                                 <li className="logo"><img src={exprience.logo} alt="" /></li>
-                                <li className="position">{exprience.position} <span>{exprience.companyName} <span>{exprience.workFrom}</span></span></li>
-                                <li className="link">
-                                    <Link href="/">
-                                        <a>Go to website</a>
-                                    </Link>
-                                </li>
+                                <li className="position">{exprience.position} <span>{exprience.companyName} - {exprience.link} <span>{exprience.workFrom}</span></span></li>
                             </ul>
                         </div>
                     ))}

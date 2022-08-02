@@ -77,9 +77,7 @@ const BlogSection = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
                         <div className="wpo-section-title">
-                            <h2>Latest News</h2>
-                            <p>Must explain to you how all this mistaken idea pleasure
-                                born and give you a complete account.</p>
+                            <h2>Latest Blog</h2>
                         </div>
                     </div>
                 </div>
@@ -91,15 +89,7 @@ const BlogSection = () => {
                                     <img src={blog.screens} alt="" />
                                 </div>
                                 <div className="wpo-blog-text">
-                                    <ul>
-                                        <li>{blog.create_at}</li>
-                                    </ul>
                                     <h2>{blog.title}</h2>
-                                    <Button
-                                        className="details"
-                                        onClick={() => handleClickOpen(blog)}>
-                                        Post Details
-                                    </Button>
                                 </div>
                             </div>
                         ))}

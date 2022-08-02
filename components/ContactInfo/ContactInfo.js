@@ -16,9 +16,8 @@ const ContactInfo = (props) => {
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>1489 Langley Ave
-                                        Grand Forks Afb, North.</p>
-                                    <span>USA, Office AddRESS</span>
+                                    <p>312 W 2nd St, WY 82601</p>
+                                    <span>USA, Office Address</span>
                                 </div>
                             </div>
                         </div>
@@ -30,9 +29,8 @@ const ContactInfo = (props) => {
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>+1 800 123 456 789</p>
-                                    <p>+1 800 123 654 987</p>
-                                    <span>call us today</span>
+                                    <p>+1 304 666 2211</p>
+                                    <span>call me today</span>
                                 </div>
                             </div>
                         </div>
@@ -44,8 +42,7 @@ const ContactInfo = (props) => {
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>consoel@gmail.com</p>
-                                    <p>info724@gmail.com</p>
+                                    <p>gianghungtien@gmail.com</p>
                                     <span>EMAIL ADDRESS</span>
                                 </div>
                             </div>

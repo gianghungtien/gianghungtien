@@ -12,7 +12,7 @@ const CtaSection = (props) => {
                         </div>
                         <div className="col col-lg-6">
                             <div className="send-message-btn">
-                                <Link className="theme-btn" to="contact" spy={true} smooth={true} duration={500}>Contact Us</Link>
+                                <Link className="theme-btn" to="contact" spy={true} smooth={true} duration={500}>Contact Me</Link>
                             </div>
                         </div>
                     </div>

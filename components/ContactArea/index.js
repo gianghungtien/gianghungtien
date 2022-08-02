@@ -23,29 +23,29 @@ const ContactArea = (props) => {
                                 <div className="col col-lg-6 col-md-12 col-12">
                                     <div className="wpo-contact-info">
                                         <div className="info-item">
-                                            <h2>25 North Street,Dubai</h2>
+                                            <h2>312 W 2nd St, WY 82601</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
                                                     <i className="fi flaticon-location"></i>
                                                 </div>
                                                 <div className="info-text">
-                                                    <span>Office Address</span>
+                                                    <span>Mail Address</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="info-item">
-                                            <h2>info@elito.com</h2>
+                                            <h2>gianghungtien@gmail.com</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
                                                     <i className="fi flaticon-mail"></i>
                                                 </div>
                                                 <div className="info-text">
-                                                    <span>Official Mail</span>
+                                                    <span>Official eMail</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="info-item">
-                                            <h2>+91 256-987-239</h2>
+                                            <h2>+1 304-666-2211</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
                                                     <i className="fi flaticon-phone-call"></i>
