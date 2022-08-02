@@ -10,23 +10,6 @@ const menus = [
         id: 1,
         title: 'Home',
         link: 'home',
-        submenu: [
-            {
-                id: 11,
-                title: 'Home style 1',
-                link: '/'
-            },
-            {
-                id: 12,
-                title: 'Home style 2',
-                link: '/home2'
-            },
-            {
-                id: 13,
-                title: 'Home style 3',
-                link: '/home3'
-            }
-        ]
     },
 
 ]
@@ -86,10 +69,10 @@ const MobileMenu = () => {
                         <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500} onClick={ClickHandler}>Portfolio</Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Contact</Link>
+                        <Link activeClass="active" to="blog" spy={true} smooth={true} duration={500}>Blog</Link>
                     </li>
                     <li>
-                        <Link activeClass="active" to="blog" spy={true} smooth={true} duration={500}>Blog</Link>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>Contact</Link>
                     </li>
                 </ul>
 

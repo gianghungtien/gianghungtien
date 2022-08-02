@@ -4,33 +4,36 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Expriences = [
     {
-        date: '2015 - 2016',
-        logo: 'images/work/1.png',
-        position: 'Junior Visual Designer',
-        companyName: 'Yeah1 Group',
-        workFrom: '',
-        link: 'https://yeah1group.com',
-    },
-    {
         date: '2017 - 2018',
+        logo: 'images/work/1.png',
+        position: 'Project Coordinator',
+        companyName: 'Yeah1 Group',
+        workFrom: '(Fulltime)',
+        link: 'yeah1group.com',
+    },
+    {
+        date: '2018 - 2020',
         logo: 'images/work/2.png',
-        position: 'UI/UX Designer',
-        companyName: 'Gallerie Ontario, Canada',
-        workFrom: '(Remote)',
+        position: 'Sr. Digital Marketing',
+        companyName: 'The Fitout',
+        workFrom: '(Fulltime)',
+        link: 'thefitoutcompany.com',
     },
     {
-        date: '2019 - 2020',
+        date: '2021 - 2022',
         logo: 'images/work/3.png',
-        position: 'Seinor UI/UX Desinger',
-        companyName: 'Morson Hybrid, Canada',
-        workFrom: '',
+        position: 'Sr. Digital Marketing',
+        companyName: 'TheHive Dubai',
+        workFrom: '(Fulltime)',
+        link: 'liveathive.ae',
     },
     {
-        date: '2019 - Present',
+        date: '2021 - NOW',
         logo: 'images/work/4.png',
-        position: 'Product Designer',
-        companyName: 'Myant Inc. Etobicoke, ON',
+        position: 'FOUNDER',
+        companyName: 'FigX LTD',
         workFrom: '(Remote)',
+        link: 'figx.app',
     },
 
 ]
@@ -47,7 +50,7 @@ const ExprienceSec = (props) => {
                             <ul>
                                 <li className="date">{exprience.date}</li>
                                 <li className="logo"><img src={exprience.logo} alt="" /></li>
-                                <li className="position">{exprience.position} <span>{exprience.companyName} - {exprience.link} <span>{exprience.workFrom}</span></span></li>
+                                <li className="position">{exprience.position} <span>{exprience.companyName} <span>{exprience.workFrom}</span> - {exprience.link}</span></li>
                             </ul>
                         </div>
                     ))}
