@@ -24,11 +24,9 @@ const Footer = (props) => {
                                     Process</p>
                                 <div className="social-icons">
                                     <ul>
-                                        <li><Link to="/"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link to="/"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="/"><i className="ti-linkedin"></i></Link></li>
-                                        <li><Link to="/"><i className="ti-pinterest"></i></Link></li>
-                                        <li><Link to="/"><i className="ti-vimeo-alt"></i></Link></li>
+                                        <li><Link to="https://fb.com/gianghungtien.jxj"><i className="ti-facebook"></i></Link></li>
+                                        <li><Link to="https://twitter.com/gianghungtien"><i className="ti-twitter-alt"></i></Link></li>
+                                        <li><Link to="https://linkedin.com/in/tiengh"><i className="ti-linkedin"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -39,8 +37,8 @@ const Footer = (props) => {
                                     <h3>Navigation</h3>
                                 </div>
                                 <ul>
-                                    <li><Link to="about" spy={true} smooth={true}  duration={500}>About us</Link></li>
-                                    <li><Link to="contact" spy={true} smooth={true}  duration={500}>Contact us</Link></li>
+                                    <li><Link to="about" spy={true} smooth={true}  duration={500}>About me</Link></li>
+                                    <li><Link to="contact" spy={true} smooth={true}  duration={500}>Contact me</Link></li>
                                     <li><Link to="portfolio" spy={true} smooth={true}  duration={500}>Projects</Link></li>
                                     <li><Link to="blog" spy={true} smooth={true}  duration={500}>Recent Post</Link></li>
                                 </ul>
@@ -97,7 +95,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="separator"></div>
-                        <p className="copyright">Copyright &copy; 2022 Elito. All rights reserved.</p>
+                        <p className="copyright">Copyright &copy; 2022. All rights reserved.</p>
                     </div>
                 </div>
             </div>
