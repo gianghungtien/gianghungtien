@@ -77,7 +77,7 @@ const BlogSection = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
                         <div className="wpo-section-title">
-                            <h2>Latest Blog</h2>
+                            <h2>Latest Blog (Updating)</h2>
                         </div>
                     </div>
                 </div>

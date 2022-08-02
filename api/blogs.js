@@ -1,7 +1,7 @@
 const blogs = [
     {
         id: '1',
-        title: 'Have evolved over the years sometimes accident.',
+        title: 'Updating...',
         screens: 'images/blog/img-1.jpg',
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
         author: 'Marilou Kelleher',
@@ -13,7 +13,7 @@ const blogs = [
     },
     {
         id: '2',
-        title: ' The Internet tend to repeat predefined chunks.',
+        title: 'Updating...',
         screens: 'images/blog/img-2.jpg',
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
         author: 'Konal Biry',
@@ -25,7 +25,7 @@ const blogs = [
     },
     {
         id: '3',
-        title: 'The standard chunk of used since the interested.',
+        title: 'Updating...',
         screens: 'images/blog/img-3.jpg',
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
         author: 'Aliza Anny',
@@ -37,7 +37,7 @@ const blogs = [
     },
     {
         id: '4',
-        title: ' The Internet tend to repeat predefined chunks.',
+        title: 'Updating...',
         screens: 'images/blog/img-2.jpg',
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
         author: 'Konal Biry',
