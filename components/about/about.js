@@ -22,7 +22,7 @@ const About = (props) => {
                         <div className="wpo-about-content">
                             <div className="wpo-about-title">
                                 <h2>My Advantage (Realtime)</h2>
-                                <p>Below are the number of projects that I have been involved in over the past 6 years (it will be updated realtime).</p>
+                                <p>Below are the number of projects that I have been involved in over the past 5 years (it will be updated realtime).</p>
                             </div>
                             <div className="wpo-about-funfact">
                                 <div className="grid">

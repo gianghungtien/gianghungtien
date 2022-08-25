@@ -20,7 +20,7 @@ const Footer = (props) => {
                                     <Link className="site-logo" to="/"><img
                                         src="images/logo.png" alt=""/>TienGH.</Link>
                                 </div>
-                                <p>I have been working in this field for over 5 years and am ready to assist in navigating your business in the right direction.</p>
+                                <p>In the last 5 years I have tackled over 800 different projects, are you willing to join me in combining the work?</p>
                                 <div className="social-icons">
                                     <ul>
                                         <li><a href="https://fb.com/gianghungtien.jxj"><i className="ti-facebook"></i></a></li>
