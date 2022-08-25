@@ -33,9 +33,9 @@ const Hero = () => {
                 <div className="static-hero-img">
                     <div className="static-hero-img-inner">
                         <img src='images/slider/1.png' alt="" />
-                        <div className="icon-1 floating-item"><img src='images/icon/photoshop.svg' alt="" /></div>
-                        <div className="icon-2 floating-item"><img src='images/icon/illustrator.svg' alt="" /></div>
-                        <div className="icon-3 floating-item"><img src='images/icon/diamond.svg' alt="" /></div>
+                        <div className="icon-1 floating-item"><img src='images/icon/coder.png' alt="Programming" /></div>
+                        <div className="icon-2 floating-item"><img src='images/icon/marketing.png' alt="Marketing" /></div>
+                        <div className="icon-3 floating-item"><img src='images/icon/design.png' alt="Graphic Designer" /></div>
                         <div className="project floating-item">
                             <div className="icon">
                                 <i className="fi flaticon-verified"></i>
