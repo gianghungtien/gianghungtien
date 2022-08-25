@@ -7,7 +7,8 @@ const Expriences = [
         date: 'JUN 2017',
         date2: 'JUL 2018',
         logo: 'images/work/1.png',
-        position: 'Project Coordinator',
+        position: 'Project Coordinator 🛈',
+        position2: 'Navigate and develop the network of digital content creator partners as well as censor copyright information in the system.\nCreation of viral campaigns on global social networks.\nFocus on developing digital media channels.',
         companyName: 'Yeah1 Group - Singapore',
         workFrom: '(Fulltime)',
         link: 'https://yeah1group.com',
@@ -16,7 +17,8 @@ const Expriences = [
         date: 'AUG 2018',
         date2: 'NOV 2020',
         logo: 'images/work/2.png',
-        position: 'Sr. Digital Marketing',
+        position: 'Sr.Digital Marketing 🛈',
+        position2: 'Responsible for as well as planning viral marketing campaigns and Reaching customers.\nFinalize the company final product concept template.\nMarket survey.',
         companyName: 'The Fitout - Vietnam',
         workFrom: '(Fulltime)',
         link: 'https://thefitoutcompany.com',
@@ -25,7 +27,8 @@ const Expriences = [
         date: 'APR 2021',
         date2: 'JUN 2022',
         logo: 'images/work/3.png',
-        position: 'Sr. Digital Marketing',
+        position: 'Sr.Marketing 🛈',
+        position2: 'Market survey.\nTake advantage of available communication channels to make the most of the customer file.\nBrainstorm campaign ideas to boost the number of deals.',
         companyName: 'TheHive - Dubai, UAE',
         workFrom: '(Fulltime)',
         link: 'https://liveathive.ae',
@@ -54,7 +57,7 @@ const ExprienceSec = (props) => {
                             <ul>
                                 <li className="date">{exprience.date} <br/>{exprience.date2}</li>
                                 <li className="logo"><img src={exprience.logo} alt="" /></li>
-                                <li className="position">{exprience.position} <span><a href={exprience.link}>{exprience.companyName}</a> <span>{exprience.workFrom}</span></span></li>
+                                <li className="position" data-toggle="tooltip" title={exprience.position2}>{exprience.position} <span><a href={exprience.link}>{exprience.companyName}</a> <span>{exprience.workFrom}</span></span></li>
                             </ul>
                         </div>
                     ))}
