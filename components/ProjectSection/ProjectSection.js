@@ -94,7 +94,7 @@ const ProjectSection = (props) => {
                                     <img src={project.pImg} alt="" />
                                 </div>
                                 <div className="wpo-project-text">
-                                    <h2>{project.title}</h2>
+                                    <h2><a href={project.link2}>{project.title}</a></h2>
                                     <span>{project.subTitle} {project.link}</span>
                                 </div>
                             </div>
@@ -123,7 +123,6 @@ const ProjectSection = (props) => {
             <div className="line-shape-2">
                 <img src='images/project/line-2.png' alt="" />
             </div>
-            <ProjectSingle open={open} onClose={handleClose} title={state.title} pImg={state.ps1img} psub1img1={state.psub1img1} psub1img2={state.psub1img2} />
         </div>
     );
 }
