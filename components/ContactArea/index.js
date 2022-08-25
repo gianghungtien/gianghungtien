@@ -40,7 +40,7 @@ const ContactArea = (props) => {
                                                     <i className="fi flaticon-mail"></i>
                                                 </div>
                                                 <div className="info-text">
-                                                    <span>Official eMail</span>
+                                                    <span>eMail</span>
                                                 </div>
                                             </div>
                                         </div>
