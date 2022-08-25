@@ -1,8 +1,8 @@
 const blogs = [
     {
         id: '1',
-        title: 'Updating...',
-        screens: 'images/blog/img-1.jpg',
+        title: '[MEDIUM] The story of climate change and Covid-19 pandemic.',
+        screens: 'https://cdn-images-1.medium.com/max/600/1*ezlv7DqjbhnO9FJuvdcdKg.png',
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
         author: 'Marilou Kelleher',
         authorTitle:'Sineor Consultant',
@@ -10,6 +10,7 @@ const blogs = [
         blogSingleImg:'images/blog-details/img-1.jpg', 
         comment:'35',
         blClass:'format-standard-image',
+        link:'https://link.medium.com/iUojpkY748',
     },
     {
         id: '2',

@@ -4,36 +4,40 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Expriences = [
     {
-        date: '2017 - 2018',
+        date: 'JUN 2017',
+        date2: 'JUL 2018',
         logo: 'images/work/1.png',
         position: 'Project Coordinator',
-        companyName: 'Yeah1 Group',
+        companyName: 'Yeah1 Group - Singapore',
         workFrom: '(Fulltime)',
-        link: 'yeah1group.com',
+        link: 'https://yeah1group.com',
     },
     {
-        date: '2018 - 2020',
+        date: 'AUG 2018',
+        date2: 'NOV 2020',
         logo: 'images/work/2.png',
         position: 'Sr. Digital Marketing',
-        companyName: 'The Fitout',
+        companyName: 'The Fitout - Vietnam',
         workFrom: '(Fulltime)',
-        link: 'thefitoutcompany.com',
+        link: 'https://thefitoutcompany.com',
     },
     {
-        date: '2021 - 2022',
+        date: 'APR 2021',
+        date2: 'JUN 2022',
         logo: 'images/work/3.png',
         position: 'Sr. Digital Marketing',
-        companyName: 'TheHive Dubai',
+        companyName: 'TheHive - Dubai, UAE',
         workFrom: '(Fulltime)',
-        link: 'liveathive.ae',
+        link: 'https://liveathive.ae',
     },
     {
-        date: '2021 - NOW',
+        date: 'APR 2021',
+        date2: 'TO NOW',
         logo: 'images/work/4.png',
         position: 'FOUNDER',
-        companyName: 'FigX LTD',
+        companyName: 'FigX LTD - United Kingdom',
         workFrom: '(Remote)',
-        link: 'figx.app',
+        link: 'https://figx.app',
     },
 
 ]
@@ -48,9 +52,9 @@ const ExprienceSec = (props) => {
                     {Expriences.map((exprience, exp) => (
                         <div className="wpo-work-item" key={exp}>
                             <ul>
-                                <li className="date">{exprience.date}</li>
+                                <li className="date">{exprience.date} <br/>{exprience.date2}</li>
                                 <li className="logo"><img src={exprience.logo} alt="" /></li>
-                                <li className="position">{exprience.position} <span>{exprience.companyName} <span>{exprience.workFrom}</span> - {exprience.link}</span></li>
+                                <li className="position">{exprience.position} <span><a href={exprience.link}>{exprience.companyName}</a> <span>{exprience.workFrom}</span></span></li>
                             </ul>
                         </div>
                     ))}

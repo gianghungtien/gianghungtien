@@ -89,7 +89,7 @@ const BlogSection = () => {
                                     <img src={blog.screens} alt="" />
                                 </div>
                                 <div className="wpo-blog-text">
-                                    <h2>{blog.title}</h2>
+                                    <h2><a href={blog.link}>{blog.title}</a></h2>
                                 </div>
                             </div>
                         ))}

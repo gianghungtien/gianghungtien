@@ -19,7 +19,7 @@ const Hero = () => {
                                         <h5>Business Fullstack Counselors</h5>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
-                                        <p>I have been working in this field for over 5 years and am ready to assist in navigating your business in the right direction.</p>
+                                        <p>In the last 5 years I have tackled over 800 different projects, are you willing to join me in combining the work?</p>
                                     </div>
                                     <div className="clearfix"></div>
                                     <div className="slide-btn"><Link className="theme-btn" to="contact" spy={true} smooth={true}  duration={500}>Hire Me</Link></div>
