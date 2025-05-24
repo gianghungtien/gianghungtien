@@ -2,9 +2,9 @@
 
 .custom-booking-container {
     min-height: 400px;
-    max-height: none;
+    max-height: none !important;
     position: relative;
-    overflow: visible;
+    overflow: visible !important;
     width: 100%;
 }
 
@@ -26,6 +26,24 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Global mobile scroll fixes */
+html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    -webkit-overflow-scrolling: touch !important;
+    position: relative !important;
 }
 
 /* Calendly Widget Fallback */
@@ -245,15 +263,45 @@
 
 /* Mobile-specific fixes */
 @media (max-width: 768px) {
+    /* Critical mobile scroll fixes */
+    html, body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        -webkit-overflow-scrolling: touch !important;
+        position: relative !important;
+    }
+    
     /* Override main contact section styles on mobile */
+    #contact {
+        overflow: visible !important;
+        max-height: none !important;
+        height: auto !important;
+    }
+    
+    #contact .section {
+        overflow: visible !important;
+        max-height: none !important;
+        height: auto !important;
+    }
+    
+    #contact .container {
+        overflow: visible !important;
+        max-height: none !important;
+        height: auto !important;
+    }
+    
     #contact .contact-container {
         overflow: visible !important;
         max-height: none !important;
+        height: auto !important;
     }
     
     #contact .contact-form {
         overflow: visible !important;
         max-height: none !important;
+        height: auto !important;
         padding: 1.5rem !important;
     }
     
@@ -261,6 +309,7 @@
         min-height: 300px;
         overflow: visible !important;
         max-height: none !important;
+        height: auto !important;
     }
     
     .calendly-inline-widget {
@@ -304,6 +353,29 @@
     .booking-details textarea {
         padding: 0.65rem;
         font-size: 16px; /* Prevent zoom on iOS */
+    }
+    
+    /* Critical: Ensure all sections can scroll */
+    .section {
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+    
+    .container {
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+    
+    /* Fix any potential fixed heights */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    *:not(.loading-spinner):not(.calendly-inline-widget) {
+        max-height: none !important;
     }
 }
 
@@ -355,38 +427,19 @@
     }
 }
 
-/* Ensure proper scrolling on mobile - Global overrides */
-@media (max-width: 768px) {
-    body {
+/* Critical: Ensure touch devices can scroll */
+@media (pointer: coarse) {
+    html, body {
         overflow-x: hidden !important;
         overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior-y: contain;
     }
     
-    html {
-        overflow-x: hidden !important;
-        overflow-y: auto !important;
-    }
-    
-    .section {
+    .section, .container, .contact-container, .contact-form {
         overflow: visible !important;
-    }
-    
-    .container {
-        overflow: visible !important;
-    }
-    
-    .contact-container {
-        overflow: visible !important;
-    }
-    
-    .contact-form {
-        overflow: visible !important;
-    }
-    
-    /* Prevent horizontal scroll */
-    * {
-        max-width: 100%;
-        box-sizing: border-box;
+        height: auto !important;
+        max-height: none !important;
     }
 }
 

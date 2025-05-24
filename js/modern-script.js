@@ -373,11 +373,16 @@ function initializeMobileOptimizations() {
             target.style.minWidth = '44px';
         });
         
-        // Prevent iOS bounce scroll
-        document.addEventListener('touchmove', function(e) {
-            if (e.scale !== 1) {
+        // Only prevent zoom on iOS, not general scrolling
+        document.addEventListener('touchstart', function(e) {
+            if (e.touches.length > 1) {
                 e.preventDefault();
             }
+        }, { passive: false });
+        
+        // Prevent zoom but allow scrolling
+        document.addEventListener('gesturestart', function(e) {
+            e.preventDefault();
         }, { passive: false });
     }
     
@@ -398,11 +403,11 @@ function initializeMobileOptimizations() {
         images.forEach(img => imageObserver.observe(img));
     }
     
-    // Viewport meta tag adjustment for iOS
+    // Viewport meta tag adjustment for iOS - allow scrolling
     if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
         const viewport = document.querySelector('meta[name="viewport"]');
         if (viewport) {
-            viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+            viewport.content = 'width=device-width, initial-scale=1.0, user-scalable=no';
         }
     }
 }

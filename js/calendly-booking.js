@@ -3,6 +3,35 @@
  * Custom booking interface using Calendly API v2
  */
 
+// Mobile scroll fix
+(function() {
+    // Ensure scrolling works on mobile
+    if (typeof window !== 'undefined' && window.document) {
+        // Remove any existing touch event handlers that might prevent scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force enable scrolling on mobile
+            document.body.style.overflow = 'auto';
+            document.body.style.overflowX = 'hidden';
+            document.body.style.overflowY = 'auto';
+            document.body.style.webkitOverflowScrolling = 'touch';
+            
+            // Fix for iOS
+            if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                document.body.style.position = 'relative';
+                document.body.style.minHeight = '100vh';
+            }
+            
+            // Ensure all sections are scrollable
+            const sections = document.querySelectorAll('.section, .container, .contact-container, .contact-form');
+            sections.forEach(section => {
+                section.style.overflow = 'visible';
+                section.style.height = 'auto';
+                section.style.maxHeight = 'none';
+            });
+        });
+    }
+})();
+
 class CalendlyBooking {
     constructor() {
         this.apiToken = 'eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzQ4MDkyNjM0LCJqdGkiOiJhMjhkNTYxYi00N2YzLTQyNWEtOWQ4Ni02MjE3OWM2YjU2ZWYiLCJ1c2VyX3V1aWQiOiI3OThjZTZmOS1kYWY3LTQyMzgtODcyYy0xNGZlNGVkZWY5NjEifQ.F7nou7C2H5OU2LjfcDT7iTRGn4a7tizUrHKlENA592a55bUH_TXQp_fWEej6ForTIBRnwFQx8JZMRFJa0qvB6A';
