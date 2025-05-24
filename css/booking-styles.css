@@ -1,0 +1,407 @@
+/* Custom Calendly Booking Styles */
+
+.custom-booking-container {
+    min-height: 400px;
+    max-height: none;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+}
+
+.loading-state {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Calendly Widget Fallback */
+.calendly-fallback {
+    width: 100%;
+    overflow: visible;
+}
+
+.calendly-inline-widget {
+    min-height: 600px !important;
+    height: 600px !important;
+    width: 100% !important;
+    border: none;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+/* Override main contact form styles for booking */
+.contact-form .custom-booking-container {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Date Picker Styles */
+.date-selector {
+    margin-bottom: 2rem;
+}
+
+.date-selector h4 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.date-picker {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.date-option {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-light);
+    background: var(--bg-white);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.date-option:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.date-option.selected {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Time Slots Styles */
+.time-slots {
+    margin-bottom: 2rem;
+}
+
+.time-slots h4 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.time-slots-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.time-slot {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-light);
+    background: var(--bg-white);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.time-slot:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.time-slot.selected {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.no-slots {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius-md);
+}
+
+/* Booking Details Styles */
+.booking-details {
+    margin-top: 2rem;
+}
+
+.booking-details h4 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.selected-time {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.selected-time strong {
+    color: var(--primary-color);
+}
+
+/* Success and Error States */
+.booking-success, .booking-error {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.success-icon, .error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.success-icon {
+    color: #10b981;
+}
+
+.error-icon {
+    color: #ef4444;
+}
+
+.booking-success h4 {
+    color: #10b981;
+    margin-bottom: 1rem;
+}
+
+.booking-error h4 {
+    color: #ef4444;
+    margin-bottom: 1rem;
+}
+
+.booking-success p, .booking-error p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+/* Form Styles - Override main styles for booking forms */
+.booking-details .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.booking-details label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.booking-details input,
+.booking-details textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-light);
+    border-radius: var(--border-radius-md);
+    font-size: 1rem;
+    transition: border-color var(--transition-normal);
+    background: var(--bg-white);
+    color: var(--text-dark);
+    box-sizing: border-box;
+}
+
+.booking-details input:focus,
+.booking-details textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.booking-details textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+    /* Override main contact section styles on mobile */
+    #contact .contact-container {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+    
+    #contact .contact-form {
+        overflow: visible !important;
+        max-height: none !important;
+        padding: 1.5rem !important;
+    }
+    
+    .custom-booking-container {
+        min-height: 300px;
+        overflow: visible !important;
+        max-height: none !important;
+    }
+    
+    .calendly-inline-widget {
+        min-height: 500px !important;
+        height: 500px !important;
+    }
+    
+    .loading-state {
+        padding: 1.5rem 1rem;
+    }
+    
+    .date-picker {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .time-slots-container {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 0.5rem;
+    }
+    
+    .date-option, .time-slot {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    
+    .booking-success, .booking-error {
+        padding: 1.5rem 1rem;
+    }
+    
+    .booking-details {
+        margin-top: 1.5rem;
+    }
+    
+    .success-icon, .error-icon {
+        font-size: 2.5rem;
+    }
+    
+    /* Ensure form inputs are properly sized on mobile */
+    .booking-details input,
+    .booking-details textarea {
+        padding: 0.65rem;
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+
+@media (max-width: 480px) {
+    #contact .contact-form {
+        padding: 1rem !important;
+    }
+    
+    .custom-booking-container {
+        min-height: 250px;
+    }
+    
+    .calendly-inline-widget {
+        min-height: 450px !important;
+        height: 450px !important;
+    }
+    
+    .loading-state {
+        padding: 1rem;
+    }
+    
+    .date-picker {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 0.4rem;
+    }
+    
+    .time-slots-container {
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        gap: 0.4rem;
+    }
+    
+    .date-option, .time-slot {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    
+    .booking-success, .booking-error {
+        padding: 1rem;
+    }
+    
+    .success-icon, .error-icon {
+        font-size: 2rem;
+    }
+    
+    .booking-details input,
+    .booking-details textarea {
+        padding: 0.6rem;
+        font-size: 16px;
+    }
+}
+
+/* Ensure proper scrolling on mobile - Global overrides */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+    
+    html {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+    
+    .section {
+        overflow: visible !important;
+    }
+    
+    .container {
+        overflow: visible !important;
+    }
+    
+    .contact-container {
+        overflow: visible !important;
+    }
+    
+    .contact-form {
+        overflow: visible !important;
+    }
+    
+    /* Prevent horizontal scroll */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .date-option, .time-slot {
+        border-color: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .selected-time {
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .no-slots {
+        background: rgba(255, 255, 255, 0.05);
+    }
+} 

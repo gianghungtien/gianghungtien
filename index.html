@@ -25,6 +25,9 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/modern-style.css">
     
+    <!-- Booking Styles -->
+    <link rel="stylesheet" href="css/booking-styles.css">
+    
     <!-- PWA Support -->
     <meta name="theme-color" content="#2563eb">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -76,8 +79,8 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
+                        <i class="fas fa-calendar-alt"></i>
+                        Book A Meeting
                     </a>
                     <a href="#about" class="btn btn-outline">
                         <i class="fas fa-user"></i>
@@ -121,7 +124,7 @@
                         <span class="tag">#ArtificialIntelligence</span>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#contact" class="btn btn-primary">Book A Meeting</a>
                         <a href="#experience" class="btn btn-outline">View Resume</a>
                     </div>
                 </div>
@@ -354,42 +357,117 @@
     <section id="contact" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">Book A Meeting</h2>
                 <p class="section-subtitle">
-                    Let's discuss how we can work together to bring your vision to life
+                    Schedule a 30-minute consultation to discuss how we can work together
                 </p>
             </div>
             <div class="contact-container">
                 <div class="contact-form">
-                    <h3 class="mb-2">Send Me A Message</h3>
-                    <form action="#" method="POST" novalidate>
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <h3 class="mb-2">Schedule Your Consultation</h3>
+                    <p class="mb-4" style="color: var(--text-light);">
+                        Select a convenient time for our discussion. I'm here to help you explore opportunities, 
+                        discuss your projects, and find the best solutions for your business needs.
+                    </p>
+                    
+                    <!-- Custom Calendly Booking Interface -->
+                    <div class="custom-booking-container">
+                        <div id="loading-state" class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading available time slots...</p>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Your Email *</label>
-                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        
+                        <div id="booking-form" class="booking-form" style="display: none;">
+                            <div class="date-selector">
+                                <h4>Select a Date</h4>
+                                <div id="date-picker" class="date-picker"></div>
+                            </div>
+                            
+                            <div class="time-slots" id="time-slots" style="display: none;">
+                                <h4>Available Times</h4>
+                                <div id="time-slots-container" class="time-slots-container"></div>
+                            </div>
+                            
+                            <div class="booking-details" id="booking-details" style="display: none;">
+                                <h4>Your Information</h4>
+                                <form id="booking-submission-form">
+                                    <div class="form-group">
+                                        <label for="booking-name">Full Name *</label>
+                                        <input type="text" id="booking-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="booking-email">Email Address *</label>
+                                        <input type="email" id="booking-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="booking-message">Message (Optional)</label>
+                                        <textarea id="booking-message" name="message" placeholder="Tell me about your project or how I can help..."></textarea>
+                                    </div>
+                                    <div class="selected-time-info" id="selected-time-info"></div>
+                                    <button type="submit" class="btn btn-primary" id="confirm-booking">
+                                        <i class="fas fa-calendar-check"></i>
+                                        Confirm Booking
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+                        
+                        <div id="booking-success" class="booking-success" style="display: none;">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4>Booking Confirmed!</h4>
+                            <p>Your consultation has been scheduled. You'll receive a confirmation email shortly.</p>
+                            <button class="btn btn-outline" onclick="resetBookingForm()">Book Another Meeting</button>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Your Message *</label>
-                            <textarea id="message" name="message" required aria-describedby="message-error" placeholder="Tell me about your project or how I can help you..."></textarea>
+                        
+                        <div id="booking-error" class="booking-error" style="display: none;">
+                            <div class="error-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h4>Booking Failed</h4>
+                            <p id="error-message">Something went wrong. Please try again or contact me directly.</p>
+                            <button class="btn btn-outline" onclick="resetBookingForm()">Try Again</button>
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
+                    </div>
+                    
+                    <div class="meeting-benefits" style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--primary-color);">What to Expect:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                                30-minute focused discussion about your project
+                            </li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                                Strategic insights and recommendations
+                            </li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                                Clear next steps and action plan
+                            </li>
+                            <li style="margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                                No commitment required - let's just talk!
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-info">
                     <h3 class="mb-2">Contact Information</h3>
                     <p class="mb-4" style="color: var(--text-light);">
                         Feel free to reach out through any of these channels. I'm always open to discussing new opportunities and collaborations.
                     </p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <strong>Meeting Duration</strong>
+                            <span>30 minutes consultation</span>
+                        </div>
+                    </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -450,5 +528,6 @@
 
     <!-- JavaScript -->
     <script src="js/modern-script.js"></script>
+    <script src="js/calendly-booking.js"></script>
 </body>
 </html>
