@@ -1,210 +1,182 @@
-# Jason Giang - Portfolio Website
+# 👋 Hello, I'm Jason Giang
 
-A modern, responsive portfolio website showcasing Jason Giang's expertise in digital business management, AI, fintech, and technology entrepreneurship.
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fjason.how)](https://jason.how)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/tiengh)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:gianghungtien@gmail.com)
 
-## 🚀 Features
+> **Digital Business Manager | Tech Entrepreneur | AI & Fintech Specialist**
+> 
+> *Transforming businesses through innovative technology solutions and strategic digital initiatives*
 
-### Modern Design
-- **Clean & Professional**: Modern gradient design with elegant typography
-- **No Video Background**: Replaced heavy video with optimized CSS gradients
-- **Responsive Layout**: Optimized for all devices (mobile, tablet, desktop)
-- **Accessibility**: WCAG compliant with proper ARIA labels and keyboard navigation
+## 🌟 Official Website
 
-### Performance Optimized
-- **Separated Assets**: CSS and JavaScript in external files for better caching
-- **Lazy Loading**: Images load only when needed
-- **Optimized Fonts**: Preconnected Google Fonts with font-display: swap
-- **Minimal Dependencies**: No heavy frameworks, pure modern CSS and JavaScript
+Visit my website: **[jason.how](https://jason.how)**
 
-### Mobile-First Design
-- **Touch-Friendly**: 44px minimum touch targets
-- **Mobile Menu**: Collapsible navigation for mobile devices
-- **Responsive Grid**: CSS Grid and Flexbox for flexible layouts
-- **Viewport Optimized**: Proper viewport meta tags for mobile
+## 🚀 About Me
 
-## 📁 File Structure
+I'm **Jason Giang**, a technology-driven entrepreneur with a special passion for **Artificial Intelligence**, **Fintech**, and **Digital Transformation**. With extensive experience in both business and technology, I specialize in:
 
-```
-/
-├── index.html              # Main HTML file
-├── css/
-│   ├── modern-style.css   # Main stylesheet (optimized)
-│   └── [old css files]    # Legacy files (can be removed)
-├── js/
-│   ├── modern-script.js   # Main JavaScript (optimized)
-│   └── [old js files]     # Legacy files (can be removed)
-├── images/                # Image assets
-└── README.md             # Documentation
-```
+🎯 **Business Strategy Development** powered by cutting-edge technology  
+🤖 **AI Implementation** to optimize processes and increase efficiency  
+💰 **Fintech Solutions** and Blockchain applications  
+🌐 **Digital Marketing** and market development  
+📈 **Digital Transformation Consulting** for enterprises
 
-## 🎨 CSS Architecture
+## 💼 Expertise & Experience
 
-### CSS Custom Properties (Variables)
-```css
-:root {
-    --primary-color: #2563eb;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    /* ... */
-}
-```
+### 🔥 Core Focus Areas
 
-### Responsive Design System
-- **Mobile First**: Base styles for mobile, scaled up for larger screens
-- **Breakpoints**: 640px (sm), 768px (md), 1024px (lg), 1200px (xl)
-- **Flexible Units**: Uses `clamp()`, `vw`, and responsive units
+- **Artificial Intelligence & Machine Learning** - Developing and deploying practical AI solutions
+- **Fintech & Blockchain** - Consulting and building digital financial systems
+- **Digital Transformation** - Partnering with businesses in their digital journey
+- **Business Strategy** - Building sustainable growth strategies
+- **Market Development** - Expanding markets and building strategic partnerships
 
-### Modern CSS Features
-- CSS Grid for complex layouts
-- Flexbox for component alignment
-- CSS Custom Properties for theming
-- `backdrop-filter` for glass morphism effects
-- CSS animations with `@keyframes`
+### 🏆 Key Achievements
 
-## ⚡ JavaScript Features
+✅ **Consulting Expert** for multiple enterprises on digital transformation  
+✅ **Successfully Developed** AI and automation projects  
+✅ **Built International Network** of technology partners  
+✅ **Speaker** at technology and business events  
+✅ **Mentor** for technology startups
 
-### Performance Optimizations
-- **Throttled Scroll Events**: Prevents performance issues
-- **Intersection Observer**: Efficient scroll-based animations
-- **Passive Event Listeners**: Improves scroll performance
-- **Debounced Resize**: Optimized window resize handling
+## 🎓 Skills & Technologies
 
-### Interactive Features
-- **Smooth Scrolling**: Native CSS `scroll-behavior` with JS fallback
-- **Mobile Menu**: Touch-friendly navigation
-- **Form Validation**: Real-time validation with error feedback
-- **Scroll Animations**: Fade-in animations on scroll
+### 💻 Programming & Technical Skills
 
-### Accessibility Features
-- **Keyboard Navigation**: Full keyboard support
-- **ARIA Attributes**: Proper labeling for screen readers
-- **Focus Management**: Visible focus indicators
-- **Reduced Motion**: Respects `prefers-reduced-motion`
+#### 🔧 **Core Programming Languages**
+- **Python** - AI/ML development, data analysis, automation scripts
+- **Java** - Enterprise applications, microservices architecture
+- **JavaScript** - Full-stack web development, Node.js backend
+- **Node.js** - Server-side development, API creation, real-time applications
+- **TypeScript** - Type-safe JavaScript for large-scale applications
+- **C++** - Performance-critical applications and algorithms
+- **Go** - Concurrent programming and cloud-native applications
 
-## 📱 Mobile Optimizations
+#### 🤖 **AI/ML & Data Science**
+- **TensorFlow** - Deep learning model development
+- **PyTorch** - Neural network research and implementation
+- **Scikit-learn** - Traditional machine learning algorithms
+- **Pandas & NumPy** - Data manipulation and analysis
+- **OpenAI API** - GPT integration and AI-powered applications
+- **Computer Vision** - OpenCV, image processing
 
-### Touch Interactions
-- Minimum 44px touch targets
-- Touch-friendly hover effects
-- Prevent iOS bounce scrolling
-- Optimized viewport settings
+#### ⛓️ **Blockchain & Cryptocurrency**
+- **Ethereum** - Smart contract development
+- **Solidity** - Smart contract programming language
+- **Web3.js** - Blockchain integration
+- **DeFi Protocols** - Decentralized finance applications
+- **NFT Development** - Non-fungible token creation
 
-### Performance
-- Disabled parallax on mobile for performance
-- Optimized animations for touch devices
-- Lazy loading for images
-- Efficient event handling
+#### ☁️ **Cloud & DevOps**
+- **AWS** - EC2, Lambda, S3, RDS, API Gateway
+- **Google Cloud Platform** - Compute Engine, Cloud Functions
+- **Azure** - Virtual machines, App Services
+- **Docker** - Containerization and deployment
+- **Kubernetes** - Container orchestration
+- **CI/CD** - Jenkins, GitHub Actions, GitLab CI
 
-## 🔧 Browser Support
+#### 🌐 **Web Technologies**
+- **React.js** - Frontend user interface development
+- **Next.js** - Full-stack React framework
+- **Vue.js** - Progressive JavaScript framework
+- **Express.js** - Node.js web application framework
+- **MongoDB** - NoSQL database management
+- **PostgreSQL** - Relational database design
+- **Redis** - In-memory data structure store
 
-- **Modern Browsers**: Chrome 88+, Firefox 85+, Safari 14+, Edge 88+
-- **Mobile Browsers**: iOS Safari 14+, Chrome Mobile 88+
-- **Progressive Enhancement**: Graceful degradation for older browsers
+### 📊 Business & Leadership Skills
+- **Strategic Planning** - Long-term business plan development
+- **Project Management** - Agile/Scrum methodologies
+- **Digital Marketing** - SEO, SEM, Social Media Marketing
+- **Market Research** - Technology trends and market analysis
+- **Partnership Development** - Strategic relationship building
+- **Team Leadership** - Cross-functional team management
+- **Product Management** - End-to-end product lifecycle
 
-## 🚀 Getting Started
+## 💡 Consulting Services
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/gianghungtien/gianghungtien.github.io.git
-   ```
+### 🚀 How I Can Help You
 
-2. **Serve locally** (optional)
-   ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
-   ```
+#### 🤖 **AI & Automation Consulting**
+- Assess and implement AI solutions for enterprises
+- Business process automation
+- Chatbot and AI customer service development
+- Data analysis and machine learning implementation
+- Custom AI model development and deployment
 
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
+#### 💰 **Fintech Solutions**
+- Digital payment transformation consulting
+- Blockchain and cryptocurrency integration
+- DeFi protocols development
+- Digital wallet and payment systems
+- Regulatory compliance and security implementation
 
-## 🎯 Performance Metrics
+#### 📈 **Digital Transformation**
+- Enterprise digitalization assessment
+- Digital transformation roadmap development
+- Process optimization with technology
+- Change management and staff training
+- Legacy system modernization
 
-### Lighthouse Scores (Target)
-- **Performance**: 90-100
-- **Accessibility**: 95-100
-- **Best Practices**: 90-100
-- **SEO**: 90-100
+#### 🌐 **Business Development**
+- Market entry strategy development
+- Partnership and business model development
+- Growth hacking and scale-up strategy
+- International expansion planning
+- Technology product management
 
-### Optimizations Applied
-- Preload critical resources
-- Optimize font loading
-- Minimize render-blocking resources
-- Efficient CSS animations
-- Optimized images with lazy loading
+## 🎯 Vision & Mission
 
-## 🔄 Migration from Old Version
+> *"I believe technology is not just a tool, but a bridge that helps businesses overcome challenges and achieve outstanding results. My mission is to help Vietnamese and international enterprises harness the power of technology to create sustainable value."*
 
-### What Changed
-1. **Removed video background** → CSS gradient
-2. **Inline styles** → External CSS file
-3. **Inline scripts** → External JS file
-4. **Heavy dependencies** → Pure CSS/JS
-5. **Complex layout system** → Modern CSS Grid/Flexbox
+### 🎪 Personal Passions
+- 📚 **Continuous Learning** about emerging technologies
+- 🌱 **Mentoring** young professionals in technology
+- 🌍 **Sustainable Tech** - Technology for environmental good
+- 🎨 **Innovation** - Creating unique solutions
+- 🚀 **Open Source** - Contributing to the developer community
+- 🎯 **Knowledge Sharing** - Speaking at conferences and workshops
 
-### Benefits
-- **50-70% faster load times**
-- **Better mobile performance**
-- **Improved accessibility**
-- **Easier maintenance**
-- **Better SEO scores**
+## 📞 Let's Connect
 
-## 🛠️ Customization
+### 💬 I'm Always Open to Discuss
 
-### Colors
-Edit CSS custom properties in `css/modern-style.css`:
-```css
-:root {
-    --primary-color: #your-color;
-    --gradient-primary: linear-gradient(135deg, #color1 0%, #color2 100%);
-}
-```
+I'm always ready to discuss:
+- **Business & Technology Collaboration** opportunities
+- **Digital Transformation & AI Consulting** projects
+- **Mentoring** for startups and young entrepreneurs
+- **Speaking** at events and conferences
+- **Investment** and partnership opportunities
+- **Open Source** collaborations and tech communities
 
-### Content
-Update content directly in `index.html` sections:
-- Hero section
-- About section
-- Services section
-- Experience timeline
-- Testimonials
-- Contact information
+### 📱 Contact Information
 
-### Animations
-Customize animations in `css/modern-style.css`:
-```css
-@keyframes your-animation {
-    /* your keyframes */
-}
-```
+- **📧 Email**: [gianghungtien@gmail.com](mailto:gianghungtien@gmail.com)
+- **💼 LinkedIn**: [@tiengh](https://linkedin.com/in/tiengh)
+- **📱 WhatsApp**: [+1 304 666 2211](https://wa.me/13046662211)
+- **✈️ Telegram**: [@tiengh](https://t.me/tiengh)
+- **🌐 Website**: [jason.how](https://jason.how)
 
-## 📊 SEO Optimizations
+### 🗓️ Schedule a Consultation
 
-- Semantic HTML structure
-- Meta tags for social sharing
-- Open Graph and Twitter Cards
-- Structured data markup
-- Optimized images with alt text
-- Clean URL structure
+You can **[book a free 30-minute consultation](https://jason.how#contact)** to discuss your project or collaboration opportunities. I'll help you:
 
-## 🔐 Security Features
-
-- `rel="noopener noreferrer"` for external links
-- CSP-ready code structure
-- XSS prevention in form handling
-- Safe external resource loading
-
-## 📞 Contact & Support
-
-For questions about this website or collaboration opportunities:
-
-- **Email**: gianghungtien@gmail.com
-- **LinkedIn**: [@tiengh](https://www.linkedin.com/in/tiengh)
-- **Telegram**: [@tiengh](https://t.me/tiengh)
+✅ Analyze current challenges  
+✅ Provide insights and recommendations  
+✅ Build specific action plans  
+✅ Explore collaboration opportunities
 
 ---
 
-**Built with ❤️ using modern web technologies**
+<div align="center">
+
+### 🚀 *"Technology is best when it brings people together"*
+
+**Let's build the digital future together!**
+
+[![Website](https://img.shields.io/badge/🌐-jason.how-blue?style=for-the-badge)](https://jason.how)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/tiengh)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:gianghungtien@gmail.com)
+
+</div>
