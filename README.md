@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fjason.how)](https://jason.how)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/tiengh)
-[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:gianghungtien@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:hello@jason.how)
 
 > **Digital Business Manager | Tech Entrepreneur | AI & Fintech Specialist**
 > 
@@ -152,9 +152,8 @@ I'm always ready to discuss:
 
 ### 📱 Contact Information
 
-- **📧 Email**: [gianghungtien@gmail.com](mailto:gianghungtien@gmail.com)
+- **📧 Email**: [hello@jason.how](mailto:hello@jason.how)
 - **💼 LinkedIn**: [@tiengh](https://linkedin.com/in/tiengh)
-- **📱 WhatsApp**: [+1 304 666 2211](https://wa.me/13046662211)
 - **✈️ Telegram**: [@tiengh](https://t.me/tiengh)
 - **🌐 Website**: [jason.how](https://jason.how)
 
@@ -177,6 +176,6 @@ You can **[book a free 30-minute consultation](https://jason.how#contact)** to d
 
 [![Website](https://img.shields.io/badge/🌐-jason.how-blue?style=for-the-badge)](https://jason.how)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/tiengh)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:gianghungtien@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:hello@jason.how)
 
 </div>
